@@ -77,5 +77,23 @@ document.addEventListener('DOMContentLoaded', event => {
 
     leetCodeCards.forEach(card => {
         observer.observe(card);
+    });
+
+
+
+
+    // Tooltip
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
     })
+
+    // Contact -> Copy e-mail to clipboard
+    const email = document.getElementById("copy-to-clipboard");
+    email.onclick = (e) => {
+        navigator.clipboard.writeText("joaovitorforgearinibeltrame@gmail.com")
+
+    }
+
+ 
 });

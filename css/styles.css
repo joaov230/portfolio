@@ -10851,6 +10851,15 @@ body {
   border-radius: 10rem;
 }
 
+.btn-not-that-large {
+  padding: 0.85rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10rem;
+}
+
 hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
@@ -10991,4 +11000,38 @@ header.masthead h1, header.masthead .h1 {
 }
 #medium .container-fluid .medium-box:hover .medium-box-caption, #medium .container-sm .medium-box:hover .medium-box-caption, #medium .container-md .medium-box:hover .medium-box-caption, #medium .container-lg .medium-box:hover .medium-box-caption, #medium .container-xl .medium-box:hover .medium-box-caption, #medium .container-xxl .medium-box:hover .medium-box-caption {
   opacity: 1;
+}
+
+
+#about img {
+  border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 991px) {
+  #about .about-image {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #about .about-image {
+    display: flex;
+    justify-content: right;
+  }
+}
+
+/* Temporary divider */
+div.divider-wrapper {
+  background-color: #212529;
+  display: flex;
+  justify-content: center;
+}
+
+div.divider {
+  padding-top: 3px;
+  width: 80%;
+  background-color: #f4623a;
+  border-radius: 20%;
 }

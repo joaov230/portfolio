@@ -11,12 +11,20 @@
   top: -2px;
 }
 
-
 #contact button i {
   position: relative;
   left: 10px;
 }
 
+#contact a i {
+  position: relative;
+  left: 10px;
+}
+
+#clipboard-icon svg {
+  position: relative;
+  left: 10px;
+}
 
 #contact .email {
   color: #f4623a;
@@ -29,7 +37,6 @@
 
 #copy-to-clipboard {
   cursor: pointer;
-
   
   &:before {
     content: '';

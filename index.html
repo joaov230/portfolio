@@ -26,6 +26,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Parsons Problems-->
+    <link href="./css/parsons.css" rel="stylesheet" />
+    <link href="./lib/prettify.css" rel="stylesheet" />
 </head>
 
 <body id="page-top">
@@ -70,7 +73,7 @@
                 </div>
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="about-image col-10 col-lg-6 mb-3 mb-lg-0">
-                        <img src="./assets/img/about.jpg" alt="Foto do criador da página sorrindo." style="max-width: 70%">
+                        <img src="./assets/img/about.jpg" alt="Foto do criador da página sorrindo." style="max-width: 70%; height: fit-content;">
                     </div>
                     <div class="col-10 col-lg-6">
                         <p class="text-white-75 mb-4">Olá! Sou <strong>João Vitor Forgearini Beltrame</strong>, um apaixonado por tecnologia, design e fotografia. Desde pequeno sempre fui fascinado por como as coisas funcionavam, a lógica por trás de cada invenção, gostava não só de replicar experiências para feiras de ciências, como também entender em detalhes como elas funcionavam.</p>
@@ -86,14 +89,25 @@
     <section class="page-section" id="pppuzzles">
         <div class="container px-4 px-lg-5">
             <h2 class="text-center mt-0">Python Parsons Puzzles</h2>
+            <h3 class="text-center section-subheading mb-0">Uma demonstração do que foi implementado no meu TCC. Os exercícios abaixo são alimentados diretamente da minha API criada pelo Google Apps Script para o TCC.</h3>
             <hr class="divider" />
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="mt-5">
-                        <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
-                        <h3 class="h4 mb-2">Trabalho de Conclusão de Curso</h3>
-                        <p class="text-muted mb-0">Essa sessão futuramente terá um exemplo do que foi meu projeto TCC.</p>
+            <div id="parsonsSectionWrapper" class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="row justify-content-center mb-4"> <!-- Buttons row -->
+                    <div class="col-12 col-lg-12 d-flex justify-content-center">
+                        <button id="btnSubmit" class="btn btn-primary mx-2">Verificar</button>
+                        <button id="btnChangeExercise" class="btn btn-secondary mx-2">Trocar</button>
+                        <button id="btnTestYourself" class="btn btn-secondary mx-2"><img src="./assets/trinket-logo.png" alt="Logo do Trinket" style="max-width: 20px; margin-right: 5px;"> Editar</button>
                     </div>
+                </div>
+                <div id="parsonsWrapper" class="row justify-content-center mb-4"> <!-- Title and exercises row -->
+                    <div id="exerciseTitleText" class="col-10 col-lg-4 text-left">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+                    <div id="sotrableCodeArea" class="col-10 col-lg-6 d-flex justify-content-center text-center">
+                        <div id="sortableTrash" class="sortable-code"></div>
+                        <div id="sortable" class="sortable-code"></div>
+                    </div>
+                </div>
+                <div id="feedbackWrapper" class="row justify-content-center"> <!-- Feedback row -->
+                    <div id="feedbackText" class="col-10 col-lg-4 text-center">Esperando verificação do exercício.</div>
                 </div>
             </div>
         </div>
@@ -306,6 +320,17 @@
     <!-- JSParsons Scripts-->
     <script src="js/jsparsons-script.js" defer></script>
     <script src="js/utils.js" defer></script>
+
+    <script src="./lib/jquery.min.js" defer></script>
+    <script src="./lib/jquery-ui.min.js" defer></script>
+    <script src="./lib/jquery.ui.touch-punch.min.js" defer></script>
+    <script src="./lib/underscore-min.js" defer></script>
+    <script src="./lib/lis.js" defer></script>
+    <script src="./js/parsons.js" defer></script>
+    <script src="./lib/prettify.js" defer></script>
+    <script src="./lib/skulpt.js" defer></script>
+    <script src="./lib/skulpt-stdlib.js" defer></script>
+
 </body>
 
 </html>

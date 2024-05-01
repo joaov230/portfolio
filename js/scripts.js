@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', event => {
 
         setTimeout(() => {
             clipboardIcon.innerHTML = "<i class=\"bi bi-clipboard\"></i>"
-        }, 2500);
+        }, 3000);
     }
 
 });

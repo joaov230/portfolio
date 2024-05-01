@@ -3,7 +3,6 @@
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.95rem;
   font-weight: 500;
-
 }
 
 #contact button {
@@ -15,24 +14,10 @@
 
 #contact button i {
   position: relative;
-  top: -2px;
-  left: 5px;
+  left: 10px;
 }
 
 
 #contact .email {
   color: #f4623a;
 }
-
-
-#contact .absolute-footer-alert {
-  background-color: red;
-  position:absolute;
-  width:100%;
-  text-align: center;
-  padding: 1rem 0rem 1rem 0rem;
-  border: 1px solid red;
-  transition: visibility 0.5s ease-in-out;
-}
-
-

@@ -80,20 +80,18 @@ document.addEventListener('DOMContentLoaded', event => {
     });
 
 
-
-
-    // Tooltip
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl)
-    })
-
     // Contact -> Copy e-mail to clipboard
     const email = document.getElementById("copy-to-clipboard");
     email.onclick = (e) => {
-        navigator.clipboard.writeText("joaovitorforgearinibeltrame@gmail.com")
+        navigator.clipboard.writeText("joaovitorforgearinibeltrame@gmail.com");
 
+        const clipboardIcon = document.getElementById("clipboard-icon");
+
+        clipboardIcon.innerHTML = "<i class=\"bi bi-clipboard-check\"></i>"
+
+        setTimeout(() => {
+            clipboardIcon.innerHTML = "<i class=\"bi bi-clipboard\"></i>"
+        }, 2500);
     }
 
- 
 });

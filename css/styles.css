@@ -344,6 +344,11 @@ button {
   border-radius: 0;
 }
 
+button:disabled {
+  cursor: not-allowed;
+  pointer-events: all !important;
+}
+
 button:focus:not(:focus-visible) {
   outline: 0;
 }

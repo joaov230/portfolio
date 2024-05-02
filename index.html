@@ -76,9 +76,9 @@
                         <img src="./assets/img/about.jpg" alt="Foto do criador da página sorrindo." style="max-width: 70%; height: fit-content;">
                     </div>
                     <div class="col-10 col-lg-6">
-                        <p class="text-white-75 mb-4">Olá! Sou <strong>João Vitor Forgearini Beltrame</strong>, um apaixonado por tecnologia, design e fotografia. Desde pequeno sempre fui fascinado por como as coisas funcionavam, a lógica por trás de cada invenção, gostava não só de replicar experiências para feiras de ciências, como também entender em detalhes como elas funcionavam.</p>
-                        <p class="text-white-75 mb-4">Me formei em Bacharel em <strong>Ciência da Computação pela Universidade Federal de Santa Maria</strong> em 2024. Minhas áreas preferidas da programação são <strong>Desenvolvimento Web Fullstack e Ciência de Dados</strong>, pois da mesma forma que tenho muito interesse por lidar com dados, tabelas, lógica e regras de negócio no back-end (inclusive reconheço que são meus pontos fortes), também tenho profunda curiosidade pela psicologia do design para front-end.</p>
-                        <p class="text-white-75 mb-4">Mas também tenho diversos interesses além da programação, como bodybuilding e powerlifting, fotografia e produção de vídeos; E quanto mais pesquiso e aprendo sobre cada um, mais me interesso por eles!</p>
+                        <p class="text-white-75 mb-3">Olá! Sou <strong>João Vitor Forgearini Beltrame</strong>, um apaixonado por tecnologia, design e fotografia. Desde pequeno sempre fui fascinado por como as coisas funcionavam, a lógica por trás de cada invenção, gostava não só de replicar experiências para feiras de ciências, como também entender em detalhes como elas funcionavam.</p>
+                        <p class="text-white-75 mb-3">Me formei em Bacharel em <strong>Ciência da Computação pela Universidade Federal de Santa Maria</strong> em 2024. Minhas áreas preferidas da programação são <strong>Desenvolvimento Web Fullstack e Ciência de Dados</strong>, pois da mesma forma que tenho muito interesse por lidar com dados, tabelas, lógica e regras de negócio no back-end (inclusive reconheço que são meus pontos fortes), também tenho profunda curiosidade pela psicologia do design para front-end.</p>
+                        <p class="text-white-75 mb-3">Mas também tenho diversos interesses além da programação, como bodybuilding e powerlifting, fotografia e produção de vídeos; E quanto mais pesquiso e aprendo sobre cada um, mais me interesso por eles!</p>
                     </div>
                 </div>
 
@@ -89,25 +89,20 @@
     <section class="page-section" id="pppuzzles">
         <div class="container px-4 px-lg-5">
             <h2 class="text-center mt-0">Python Parsons Puzzles</h2>
-            <h3 class="text-center section-subheading mb-0">Uma demonstração do que foi implementado no meu TCC. Os exercícios abaixo são alimentados diretamente da minha API criada pelo Google Apps Script para o TCC.</h3>
+            <h3 class="text-center section-subheading mb-0 mx-2">Uma demonstração do que foi implementado no meu TCC.</h3>
             <hr class="divider" />
-            <div id="parsonsSectionWrapper" class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="row justify-content-center mb-4"> <!-- Buttons row -->
-                    <div class="col-12 col-lg-12 d-flex justify-content-center">
-                        <button id="btnSubmit" class="btn btn-primary mx-2">Verificar</button>
-                        <button id="btnChangeExercise" class="btn btn-secondary mx-2">Trocar</button>
-                        <button id="btnTestYourself" class="btn btn-secondary mx-2"><img src="./assets/trinket-logo.png" alt="Logo do Trinket" style="max-width: 20px; margin-right: 5px;"> Editar</button>
-                    </div>
+            <div class="row gx-4 gx-lg-5 mb-4 justify-content-center text-center">
+                <div class="col-10 col-lg-12 mb-2 mb-lg-0">
+                    <a class="btn btn-primary mx-1" href="./pppuzzles.html" target="_blank">Teste aqui (sem login)</a>
+                    <a class="btn btn-secondary mx-1" href="https://joaov230.github.io" target="_blank">Site Oficial (necessita login)</a>
+                    <a class="btn btn-secondary mx-1" href="https://repositorio.ufsm.br/handle/1/31112" target="_blank">Texto do meu TCC</a>
                 </div>
-                <div id="parsonsWrapper" class="row justify-content-center mb-4"> <!-- Title and exercises row -->
-                    <div id="exerciseTitleText" class="col-10 col-lg-4 text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                    <div id="sotrableCodeArea" class="col-10 col-lg-6 d-flex justify-content-center text-center">
-                        <div id="sortableTrash" class="sortable-code"></div>
-                        <div id="sortable" class="sortable-code"></div>
-                    </div>
-                </div>
-                <div id="feedbackWrapper" class="row justify-content-center"> <!-- Feedback row -->
-                    <div id="feedbackText" class="col-10 col-lg-4 text-center">Esperando verificação do exercício.</div>
+            </div>
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-10 col-lg-10">
+                    <p class="mb-3">O projeto Python Parsons Puzzles surgiu como uma forma de incentivar e ajudar no aprendizado de programação para iniciantes, utilizando a linguagem Python e Problemas de Parsons, exercícios parecidos com Programação por Blocos, como amplamente divulgado pelo <a href="https://hourofcode.com/br/learn">Hour Of Code</a>, porém já utilizando a sintaxe de Python.</p>
+                    <p class="mb-3">Até o momento do meu TCC, não havia (ao meu conhecimento) nenhuma plataforma que utilizasse Problemas de Parsons e salvasse o progresso do usuário, e foi isso que foi criado.</p>
+                    <p class="mb-3">Foram utilizadas formas inteiramente gratuitas de hospedar a plataforma. A API foi desenvolvida utilizando Google Apps Script, vinculada à tabelas no Google Sheets para armazenar os dados, como exercícios, progresso de usuário, etc, enquanto para o login foi utilizado o Google OAuth 2.0, API oficial da Google para realizar login com o Google.</p>
                 </div>
             </div>
         </div>

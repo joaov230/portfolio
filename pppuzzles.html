@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Portfolio - João Vitor F. Beltrame</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/icon.png" />
+  <!-- Bootstrap Icons-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+  <!-- SimpleLightbox plugin CSS-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/style-posts.css" rel="stylesheet" />
+  <link href="css/style-parsons.css" rel="stylesheet" />
+  <link href="css/style-leetcode.css" rel="stylesheet" />
+  <link href="css/style-contact.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Parsons Problems-->
+  <link href="./css/parsons.css" rel="stylesheet" />
+  <link href="./lib/prettify.css" rel="stylesheet" />
+</head>
+
+<style>
+  body {
+    background-color: rgb(248, 249, 250);
+  }
+</style>
+
+<body id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+    <div class="container px-2 px-lg-1">
+      <a class="navbar-brand" href="#page-top" style="color: #212529;">João V. F. Beltrame</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0">
+          <li class="nav-item"><a class="nav-link" href="./index.html" style="color: #212529;">Página Principal</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pppuzzles" style="color: #212529;">Python Parsons Puzzles</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-section" id="pppuzzles">
+    <div class="container px-4 px-lg-5">
+      <h2 class="text-center mt-0">Python Parsons Puzzles</h2>
+      <h3 class="text-center section-subheading mb-0">Uma demonstração do que foi implementado no meu TCC. Os exercícios abaixo são alimentados diretamente da minha API criada pelo Google Apps Script para o TCC.</h3>
+      <hr class="divider" />
+      <div id="parsonsSectionWrapper" class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="row justify-content-center mb-4"> <!-- Buttons row -->
+          <div class="col-12 col-lg-12 d-flex justify-content-center">
+            <button id="btnSubmit" class="btn btn-primary mx-2">Verificar</button>
+            <button id="btnNext" class="btn btn-info mx-2" style="display: none;">Próximo</button>
+            <button id="btnChangeExercise" class="btn btn-secondary mx-2">Trocar</button>
+            <!-- temporarily disabled (until i find a way to do the trinket popup without taking so much to load)
+                           
+                          <button id="btnTestYourself" class="btn btn-secondary mx-2"><img src="./assets/trinket-logo.png" alt="Logo do Trinket" style="max-width: 20px; margin-right: 5px;"> Editar</button>
+                      -->
+          </div>
+        </div>
+        <div id="parsonsWrapper" class="row justify-content-center mb-4"> <!-- Title and exercises row -->
+          <div class="col-10 col-lg-4 text-left">
+            <p id="exerciseTitle">Enunciado:</p>
+            <div id="exerciseTitleText"></div>
+          </div>
+          <div id="sotrableCodeArea" class="col-10 col-lg-8 d-flex justify-content-center text-left">
+            <div id="sortableTrash" class="sortable-code"></div>
+            <div id="sortable" class="sortable-code"></div>
+          </div>
+        </div>
+        <div id="feedbackWrapper" class="row justify-content-center"> <!-- Feedback row -->
+          <div id="feedbackText" class="col-10 col-lg-4 text-center justify-content-center">
+            <div id="loadingAnimation" class="justify-content-center">
+              <div class="loader"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-light py-3 fixed-bottom">
+    <div class="container px-4 px-lg-5">
+      <div class="small text-center text-muted">Copyright &copy; 2024 - João Vitor Forgearini Beltrame</div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <!-- SimpleLightbox plugin JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js" defer></script>
+  <!-- Core theme JS-->
+  <script src="js/scripts.js" defer></script>
+  <!-- JSParsons Scripts-->
+  <script src="js/jsparsons-script.js" defer></script>
+  <script src="js/utils.js" defer></script>
+
+  <script src="./lib/jquery.min.js" defer></script>
+  <script src="./lib/jquery-ui.min.js" defer></script>
+  <script src="./lib/jquery.ui.touch-punch.min.js" defer></script>
+  <script src="./lib/underscore-min.js" defer></script>
+  <script src="./lib/lis.js" defer></script>
+  <script src="./js/parsons.js" defer></script>
+  <script src="./lib/prettify.js" defer></script>
+  <script src="./lib/skulpt.js" defer></script>
+  <script src="./lib/skulpt-stdlib.js" defer></script>
+
+</body>
+
+</html>

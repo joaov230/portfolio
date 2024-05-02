@@ -90,8 +90,8 @@ li.correctIndent {
 }
 
 li.incorrectPosition, .testcase.fail, .testcase.error {
-    background-color: #ce4848;
-    border:1px solid red;
+    background-color: #f1a4a4;
+    border:1px solid rgb(190, 30, 30);
 }
 
 li.correctPosition, .testcase.pass {

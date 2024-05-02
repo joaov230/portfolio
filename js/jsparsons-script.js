@@ -11,6 +11,15 @@ function displayFeedback(fb) {
     feedbackWrapper.style = "background-color: #DFF2BF;"
   }
 
+  function checkForDoubledFeedback (msg) {
+    if (msg.includes("<div class=\"testcase error\">")) {
+      const splitMessage = msg.split("<div class=\"testcase error\">");
+      const newMessage = "<div class=\"testcase error\">" + splitMessage[1];
+      return newMessage;
+    }
+    return msg;
+  }
+
   if (Array.isArray(fb)) {
     if (fb.length > 0) {
       feedbackText.innerHTML = fb[0];
@@ -22,7 +31,7 @@ function displayFeedback(fb) {
     if (fb.success) {
       correct(feedbackText);
     } else {
-      feedbackText.innerHTML = fb.feedback;
+      feedbackText.innerHTML = checkForDoubledFeedback(fb.feedback);
       feedbackWrapper.style = "background-color: #ffefef;"
     }
   } else {
@@ -45,7 +54,6 @@ function getRandEx() {
 function setNewRandEx(res) {
   randEx = res.randExercise;
 
-  console.log("alo")
   // Set enunciado
   document.getElementById("exerciseTitleText").innerHTML = randEx.enunciado;
   feedbackWrapper.style = "background-color: rgb(248, 249, 250);"
@@ -101,7 +109,6 @@ document.addEventListener('DOMContentLoaded', async event => {
     event.preventDefault();
 
     var fb = parson.getFeedback();
-    console.log(fb)
     displayFeedback(fb);
   }
 

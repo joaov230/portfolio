@@ -11053,15 +11053,21 @@ header.masthead h1, header.masthead .h1 {
 }
 
 /* Temporary divider */
-div.divider-wrapper {
+div.divider-wrapper-dark {
   background-color: #212529;
+  display: flex;
+  justify-content: center;
+}
+
+div.divider-wrapper-light {
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
   display: flex;
   justify-content: center;
 }
 
 div.divider {
   padding-top: 3px;
-  width: 80%;
+  width: 70%;
   background-color: #f4623a;
-  border-radius: 20%;
+  border-radius: 0%;
 }

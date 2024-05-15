@@ -47,6 +47,7 @@
         <ul class="navbar-nav ms-auto my-2 my-lg-0">
           <li class="nav-item"><a class="nav-link" href="./index.html" style="color: #212529;">Página Principal</a></li>
           <li class="nav-item"><a class="nav-link" href="#pppuzzles" style="color: #212529;">Python Parsons Puzzles</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pppuzzles-about" style="color: #212529;">Sobre o Projeto</a></li>
         </ul>
       </div>
     </div>
@@ -60,9 +61,9 @@
       <div id="parsonsSectionWrapper" class="row gx-4 gx-lg-5 justify-content-center">
         <div class="row justify-content-center mb-4"> <!-- Buttons row -->
           <div class="col-12 col-lg-12 d-flex justify-content-center">
-            <button id="btnSubmit" class="btn btn-primary mx-2">Verificar</button>
-            <button id="btnNext" class="btn btn-info mx-2" style="display: none;">Próximo</button>
+            <button id="btnSubmit" class="btn btn-primary">Verificar</button>
             <button id="btnChangeExercise" class="btn btn-secondary mx-2">Trocar</button>
+            <button id="btnNext" class="btn btn-info" style="display: none;">Próximo</button>
             <!-- temporarily disabled (until i find a way to do the trinket popup without taking so much to load)
                            
                           <button id="btnTestYourself" class="btn btn-secondary mx-2"><img src="./assets/trinket-logo.png" alt="Logo do Trinket" style="max-width: 20px; margin-right: 5px;"> Editar</button>
@@ -90,7 +91,37 @@
     </div>
   </section>
 
-  <footer class="bg-light py-3 fixed-bottom">
+  <section class="page-section" id="pppuzzles-about">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h2 class="mt-0">Sobre o projeto</h2>
+          <hr class="divider" />
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-10 col-lg-10">
+            <h6 class="text-left mb-2 mt-4">Motivação:</h6>
+            <p class="mb-3">O projeto Python Parsons Puzzles surgiu como uma forma de incentivar e ajudar no aprendizado de programação para iniciantes, utilizando a linguagem Python e Problemas de Parsons, exercícios parecidos com Programação por Blocos, como amplamente divulgado pelo <a href="https://hourofcode.com/br/learn">Hour Of Code</a>, porém já utilizando a sintaxe de Python.</p>
+            <p class="mb-3">Até o momento do meu TCC, não havia (ao meu conhecimento) nenhuma plataforma que utilizasse Problemas de Parsons e salvasse o progresso do usuário, e foi isso que foi criado.</p>
+            <h6 class="text-left mb-2 mt-4">Decisões técnicas:</h6>
+            <p>Foram utilizadas formas inteiramente gratuitas de hospedar a plataforma. A API foi desenvolvida utilizando Google Apps Script, vinculada à tabelas no Google Sheets para armazenar os dados, como exercícios, progresso de usuário, etc, enquanto para o login foi utilizado o Google OAuth 2.0, API oficial da Google para realizar login com o Google.</p>
+
+
+          </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-10 col-lg-10">
+            <a class="btn btn-primary mb-2 mt-2 mb-lg-0" href="https://joaov230.github.io" target="_blank">Site do Projeto</a>
+            <a class="btn btn-dark mb-2 mt-2 mb-lg-0 mx-2" href="https://github.com/joaov230/_UFSM_TCC-ParsonsPuzzles" target="_blank">GitHub Oficial</a>
+            <a class="btn mb-2 mt-2 mb-lg-0" href="https://repositorio.ufsm.br/handle/1/31112" target="_blank" style="border: 2px solid grey;">Texto do TCC</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-light py-3">
     <div class="container px-4 px-lg-5">
       <div class="small text-center text-muted">Copyright &copy; 2024 - João Vitor Forgearini Beltrame</div>
     </div>

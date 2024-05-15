@@ -23,6 +23,10 @@
   font-weight: 500;
 }
 
+#pppuzzles-about {
+  background-color: rgb(248, 249, 250);
+}
+
 /* HTML: <div class="loader"></div> */
 #loadingAnimation {
   display: flex;

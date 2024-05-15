@@ -11089,6 +11089,36 @@ header.masthead h1, header.masthead .h1 {
   margin-bottom: 3rem;
 }
 
+@media (max-width: 991px) {
+  #pppuzzles .demo-one h1 {
+    text-align: center !important;
+    font-size: large;
+  }
+
+  #pppuzzles .demo-two h1 {
+    text-align: center !important;
+    font-size: large;
+  }
+  
+  #pppuzzles .demo-two .text-one{
+    display: block;
+  }
+
+  #pppuzzles .demo-two .text-two{
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  #pppuzzles .demo-two .text-one {
+    display: none;
+  }
+
+  #pppuzzles .demo-two .text-two {
+    display: block;
+  }
+}
+
 #pppuzzles .btn-teste-aqui {
   border-radius: 50px;
   padding: 0.7rem 3rem 0.7rem 3rem;

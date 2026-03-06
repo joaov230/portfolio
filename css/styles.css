@@ -11160,3 +11160,8 @@ div.divider {
   background-color: #f4623a;
   border-radius: 0%;
 }
+
+footer .footer-link {
+  --bs-text-opacity: 1;
+  color: #6c757d !important;
+}
